@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR_code(gen.)</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <section>
+        <div class="row">
+            <input type="color" class="light" value="#F0F0F0">
+            <input type="color" class="dark" value="#000000">
+            <select class="sizes">
+                <option value="100" class="value">small</option>
+                <option selected value="300" class="value">middle</option>
+                <option value="500" class="value">large</option>
+            </select>
+        </div>
+
+        <input type="text" class="qr-text" placeholder="Place your text here..">
+        <div class="box">
+            <div id="qr-code"></div>
+        </div>
+        <img class="img_scan" src="./img/Scan_here.png" alt="scan">
+        <div class="action-container">
+            <button class="download_btn">
+                <a href="#" class="download btn" download="QRCode">
+                    <img src="./img/download.png" alt="">
+                </a>
+            </button>
+            <button class="btn share-btn">
+                <img src="./img/share.png" alt="">
+            </button>
+        </div>
+        <img src="./img/qr-code.png" alt="" class="img_qr">
+        <img src="./img/colors.png" alt="color" class="color_img">
+        <img src="./img/text.png" alt="text" class="img_text">
+        </div>   
+     </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
